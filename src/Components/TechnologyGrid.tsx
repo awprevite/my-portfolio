@@ -3,7 +3,7 @@ import { siTypescript, siReact, siTailwindcss, siMysql, siNextdotjs } from 'simp
 
 function TechnologyGrid() {
   return (
-    <div id='technologies' className="grid grid-cols-3 gap-4 px-6 py-10 max-w-6xl min-w-full mx-auto">
+    <div id='technologies' className="grid grid-cols-3 gap-4 px-6 py-10 w-3/4 justify-items-center">
       <Technology
         icon={siTypescript}
         description="Javascript, but better"
