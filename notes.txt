@@ -1,0 +1,3 @@
+Make it work on desktop and mobile - play with sizes, find out how to with tailwind
+
+Add noise - mw2 style - button press and background
