@@ -2,16 +2,17 @@ import TechnologyGrid from './Components/TechnologyGrid'
 import MenuGrid from './Components/MenuGrid'
 import Info from './Components/Info'
 import ProjectGrid from './Components/ProjectGrid'
+import './index.css'
 
 function App() {
 
   return (
     <>
       <div className='relative h-screen flex flex-col items-center justify-center'>
-        <img
-          src="/Menu.png"
-          className="absolute inset-0 w-full h-full object-cover -z-10"
-        />
+        <video autoPlay muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+          <source src="/Smoke.mp4" type="video/mp4" />
+        </video>
+
         <div className="text-center p-12 relative z-10">
           <h1 className='text-white drop-shadow-[0_0_5px_rgba(0,255,0,0.9)] font-["IBM_Plex_Mono"] text-6xl'>Anthony Previte</h1>
         </div>
