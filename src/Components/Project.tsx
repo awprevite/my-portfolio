@@ -1,3 +1,5 @@
+import { SquareArrowOutUpRight } from "lucide-react";
+
 type ProjectProps = {
   img: string;
   title: string;
@@ -9,19 +11,21 @@ type ProjectProps = {
 function Project( { img, title, description, technologies, link }: ProjectProps ) {
   return (
     <div className='flex flex-col items-center gap-4 rounded-lg shadow-md p-6 w-full bg-gray-500/20 hover:scale-[1.02] transition-all duration-200'>
-      <p className='text-sm font-bold'>{title}</p>
-      <img src={img} alt={title} className='w-full h-48' />
-      <p className='text-xs'>{description}</p>
-      <div className='flex flex-wrap gap-2'>
-        {technologies.map((tech, index) => (
-          <span key={index} className='text-xs bg-gray-700/20 px-2 py-1 rounded'>
-            {tech}
-          </span>
-        ))}
+      <img src={img} className='rounded-lg'/>
+      <p className='text-sm font-bold text-left'>{title}</p>
+      <p className='text-center text-xs'>{description}</p>
+      <div className='relative pr-8 w-full'>
+        <div className='flex flex-wrap gap-2 items-center justify-start'>
+          {technologies.map((tech, index) => (
+            <div key={index} className='text-xs bg-gray-700/20 px-2 py-1 rounded'>
+              {tech}
+            </div>
+          ))}
+        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer" className='absolute top-0 right-0 text-blue-500'>
+          <SquareArrowOutUpRight className='h-6 w-6' />
+        </a>
       </div>
-      <a href={link} target="_blank" rel="noopener noreferrer" className='text-blue-500 hover:underline mt-2'>
-        View Project
-      </a>
     </div>
   )
 }

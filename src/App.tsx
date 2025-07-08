@@ -9,7 +9,7 @@ function App() {
     <>
       <div className='relative h-screen flex flex-col items-center justify-center'>
         <img
-          src="/Campaign.jpg"
+          src="/Menu.png"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
         <div className="text-center p-12 relative z-10">
@@ -24,14 +24,17 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center p-20'>
-        <Info />
-      </div>
-      <div className='flex items-center justify-center p-20'>
-        <TechnologyGrid />
-      </div>
-      <div className='flex items-center justify-center p-20'>
-        <ProjectGrid />
+      <div className='relative'>
+        <div className='absolute inset-0 bg-[url("/Noise.png")] opacity-100 z-1'></div>
+        <div className='relative z-2 flex items-center justify-center p-20'>
+          <Info />
+        </div>
+        <div className='relative z-2 flex items-center justify-center p-20'>
+          <TechnologyGrid />
+        </div>
+        <div className='relative z-2 flex items-center justify-center p-20'>
+          <ProjectGrid />
+        </div>
       </div>
     </>
   )

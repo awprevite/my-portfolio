@@ -3,28 +3,32 @@ import { Pin, Mail, Download } from 'lucide-react';
 
 function Info() {
   return (
-    <div id='info' className='flex flex-col items-center'>
-      <div className='flex items-center gap-8 p-4'>
-        <div className='flex flex-col items-left justify-center gap-4 p-4'>
-          <div className='flex align-items-left gap-2 p-2'>
-            <Pin className='h-6 w-6' />
-            <p>Andover, MA</p>
+    <div className='flex flex-col items-center justify-center'>
+      <h1 id='info' className='text-3xl font-bold text-center p-6'>Info</h1>
+      <div className='flex flex-col items-center'>
+        <div className='flex items-stretch gap-8 p-4'>
+          <div className='flex flex-col items-left justify-center gap-4 p-4 bg-gray-500/20 rounded-lg shadow-md w-full'>
+            <p className='text-2xl font-bold'>Anthony Previte</p>
+            <p>Full stack web developer</p>
+            <div className='flex align-items-left gap-2 p-2'>
+              <Pin className='h-6 w-6' />
+              <p>Andover, MA</p>
+            </div>
+            <div className='flex justify-left gap-2 p-2'>
+              <Mail className='h-6 w-6' />
+              <p>awprevite@gmail.com</p>
+            </div>
+            <a href='../Public/Anthony Previte Resume.pdf' download='Anthony Previte Resume.pdf' className='flex justify-left gap-2 p-2'>
+              <Download className='h-6 w-6' />
+              <p>Download Resume</p>
+            </a>
           </div>
-          <div className='flex justify-left gap-2 p-2'>
-            <Mail className='h-6 w-6' />
-            <p>awprevite@gmail.com</p>
+          <div className='flex flex-col items-center justify-center gap-4 p-4 bg-gray-500/20 rounded-lg shadow-md w-full'>
+            <img src='/Anthony Previte Headshot.jpeg' className='rounded-full'/>
+            <LinkGrid />
           </div>
-          <a href='../Public/Anthony Previte Resume.pdf' download='Anthony Previte Resume.pdf' className='flex justify-left gap-2 p-2'>
-            <Download className='h-6 w-6' />
-            <p>Download Resume</p>
-          </a>
-          <LinkGrid />
-        </div>
-        <div>
-          <img src='/Anthony Previte Headshot.jpeg' className='rounded-full'/>
         </div>
       </div>
-      <p>Quick Description here, full stack developer ...</p>
     </div>
   )
 }

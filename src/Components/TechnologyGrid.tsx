@@ -1,30 +1,53 @@
 import Technology from './Technology';
-import { siTypescript, siReact, siTailwindcss, siMysql, siNextdotjs } from 'simple-icons/icons';
+import { siTypescript, siReact, siTailwindcss, siPostgresql, siNextdotjs, siSwift, siGit, siFigma, siPython, siSupabase } from 'simple-icons/icons';
 
 function TechnologyGrid() {
   return (
-    <div id='technologies' className="grid grid-cols-3 gap-4 px-6 py-10 w-3/4 justify-items-center">
-      <Technology
-        icon={siTypescript}
-        description="Javascript, but better"
-      />
-      <Technology
-        icon={siReact}
-        description="Framework"
-      />
-      <Technology
-        icon={siTailwindcss}
-        description="Styling"
-      />
-      <Technology
-        icon={siMysql}
-        description="Database"
-      />
-      <Technology
-        icon={siNextdotjs}
-        description="Framework"
-        color='white'
-      />
+    <div className='flex flex-col items-center justify-center'>
+      <h1 id='technologies' className='text-3xl font-bold text-center p-6'>Technologies</h1>
+      <div className="grid grid-cols-3 gap-4 px-6 py-10 w-3/4 justify-items-center">
+        <Technology
+          icon={siFigma}
+          description="Interface Design Tool"
+        />
+        <Technology
+          icon={siTypescript}
+          description="Typed Javascript Superset"
+        />
+        <Technology
+          icon={siReact}
+          description="Javascript Library"
+        />
+        <Technology
+          icon={siNextdotjs}
+          description="React Framework"
+          color='white'
+        />
+        <Technology
+          icon={siTailwindcss}
+          description="CSS Framework"
+        />
+        <Technology
+          icon={siGit}
+          description="Version Control"
+        />
+        <Technology
+          icon={siPostgresql}
+          description="Database"
+        />
+        <Technology
+          icon={siPython}
+          description="General Purpose Language"
+        />
+        <Technology
+          icon={siSupabase}
+          description='Backend as a Service'
+        />
+        <Technology
+          icon={siSwift}
+          description="iOS & macOS Development"
+        />
+      </div>
     </div>
   )
 }
