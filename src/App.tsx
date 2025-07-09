@@ -12,6 +12,7 @@ function App() {
         <video autoPlay muted playsInline className='absolute inset-0 w-full h-full object-cover z-0'>
           <source src='/Smoke.mp4' type='video/mp4' />
         </video>
+        <div className='absolute inset-0 bg-lime-400/8 mix blend-multiply z-2'></div>
 
         <div className='text-center p-12 relative z-10'>
           <h1 className='text-white drop-shadow-[0_0_5px_rgba(0,255,0,0.9)] font-["IBM_Plex_Mono"] text-6xl'>Anthony Previte</h1>
