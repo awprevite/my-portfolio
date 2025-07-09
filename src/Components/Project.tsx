@@ -10,7 +10,7 @@ type ProjectProps = {
 
 function Project( { img, title, description, technologies, link }: ProjectProps ) {
   return (
-    <div className='flex flex-col items-start gap-6 rounded-lg shadow-md p-6 w-full bg-gray-500/20 hover:scale-[1.02] transition-all duration-200'>
+    <div className='flex flex-col items-start gap-6 rounded-lg shadow-md p-6 w-full bg-gray-500/20'>
       <img src={img} className='rounded-lg'/>
       <p className='text-sm font-bold'>{title}</p>
       <p className='text-xs'>{description}</p>
@@ -22,7 +22,7 @@ function Project( { img, title, description, technologies, link }: ProjectProps 
             </div>
           ))}
         </div>
-        <a href={link} target='_blank' rel='noopener noreferrer' className='absolute top-0 right-0 text-blue-500'>
+        <a href={link} target='_blank' rel='noopener noreferrer' className='absolute top-0 right-0 text-blue-500 hover:scale-[1.2] transition-all duration-200'>
           <SquareArrowOutUpRight className='h-6 w-6' />
         </a>
       </div>

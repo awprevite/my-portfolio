@@ -20,7 +20,7 @@ function Info() {
               <Mail className='h-6 w-6' />
               <p>awprevite@gmail.com</p>
             </div>
-            <a href='../Public/Anthony Previte Resume.pdf' download='Anthony Previte Resume.pdf' className='block w-full text-center hover:scale-[1.02] transition-all duration-200 cursor-pointer'>
+            <a href='../Public/Anthony Previte Resume.pdf' download='Anthony Previte Resume.pdf' className='block w-full text-center hover:scale-[1.05] transition-all duration-200 cursor-pointer'>
               <div className='flex w-full items-center gap-2 rounded-lg p-2 bg-gray-500/20'>
                 <Download className='h-6 w-6' />
                 <p>Download Resume</p>
