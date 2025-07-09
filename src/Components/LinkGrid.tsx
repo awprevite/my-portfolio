@@ -1,5 +1,5 @@
 import Link from './Link';
-import { Github, Linkedin, Download } from 'lucide-react';
+import { Github, Linkedin, } from 'lucide-react';
 
 function LinkGrid() {
   return (
