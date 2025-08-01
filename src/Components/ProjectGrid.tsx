@@ -6,11 +6,18 @@ function ProjectGrid() {
       <h1 id='projects' className='text-3xl font-bold text-center p-6'>Projects</h1>
       <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 p-10 justify-items-center'>
         <Project 
+          img='/SharedToDo.png'
+          title='Shared To Do'
+          description='Multi-user to do lists for managing tasks within collaborative user groups'
+          technologies={['Typescript', 'React', 'Next.js', 'PostgreSQL', 'Supabase']}
+          link='https://shared-to-do-wil1-vercel.app'
+        />
+        <Project 
           img='/Jerseys.png'
           title='Hockey Jersey Collection'
           description='Dynamic e-commerce style website for storing and displaying a personal collection of hockey jerseys'
           technologies={['Typescript', 'React', 'Next.js', 'PostgreSQL', 'Supabase']}
-          link='https://jerseys-ten.vercel.app/'
+          link='https://jerseys-ten.vercel.app'
         />
         <Project 
           img='/CoolRoutes.png'
