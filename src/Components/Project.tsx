@@ -10,7 +10,7 @@ type ProjectProps = {
 
 function Project( { img, title, description, technologies, link }: ProjectProps ) {
   return (
-    <div className='flex flex-col items-start gap-6 rounded-lg shadow-md p-6 w-full bg-gray-500/20'>
+    <div className='flex flex-col items-start gap-6 rounded-lg shadow-md p-2 md:p-6 w-full bg-gray-500/20'>
       <img src={img} className='rounded-lg'/>
       <p className='text-sm font-bold'>{title}</p>
       <p className='text-xs'>{description}</p>

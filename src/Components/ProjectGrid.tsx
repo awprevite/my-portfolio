@@ -4,7 +4,7 @@ function ProjectGrid() {
   return (
     <div className='flex flex-col items-center justify-center'>
       <h1 id='projects' className='text-3xl font-bold text-center p-6'>Projects</h1>
-      <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 p-10 justify-items-center'>
+      <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 p-6 md:p-10 justify-items-center'>
         <Project 
           img='/SharedToDo.png'
           title='Shared To Do'

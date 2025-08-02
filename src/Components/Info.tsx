@@ -7,7 +7,7 @@ function Info() {
       <h1 id='info' className='text-3xl font-bold text-center p-6'>Info</h1>
 
       <div className='flex flex-col items-center'>
-        <div className='flex items-stretch gap-8 p-4'>
+        <div className='flex flex-col md:flex-row gap-8 p-4'>
 
           <div className='flex flex-col items-left justify-center gap-4 p-4 bg-gray-500/20 rounded-lg shadow-md w-full'>
             <p className='text-2xl font-bold'>Anthony Previte</p>

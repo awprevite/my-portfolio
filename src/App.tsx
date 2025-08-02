@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='relative flex flex-col h-screen items-center justify-center'>
+      <div className='hidden md:flex relative flex-col h-screen items-center justify-center'>
         <video autoPlay muted playsInline className='absolute inset-0 w-full h-full object-cover z-10'>
           <source src='/Smoke.mp4' type='video/mp4' />
         </video>
@@ -30,18 +30,18 @@ function App() {
         
       </div>
 
-      <div className='relative px-24'>
+      <div className='relative md:px-24'>
         <div className='absolute inset-0 bg-[url("/Noise.png")] opacity-100 z-10'></div>
 
-        <div className='relative z-20 flex items-center justify-center p-10'>
+        <div className='relative z-20 flex items-center justify-center md:p-10'>
           <Info />
         </div>
 
-        <div className='relative z-20 flex items-center justify-center p-10'>
+        <div className='relative z-20 flex items-center justify-center md:p-10'>
           <TechnologyGrid />
         </div>
 
-        <div className='relative z-20 flex items-center justify-center p-10'>
+        <div className='relative z-20 flex items-center justify-center md:p-10'>
           <ProjectGrid />
         </div>
 
