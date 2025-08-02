@@ -10,7 +10,7 @@ function ProjectGrid() {
           title='Shared To Do'
           description='Multi-user to do lists for managing tasks within collaborative user groups'
           technologies={['Typescript', 'React', 'Next.js', 'PostgreSQL', 'Supabase']}
-          link='https://shared-to-do-wil1-vercel.app'
+          link='https://shared-to-do-wil1.vercel.app'
         />
         <Project 
           img='/Jerseys.png'
